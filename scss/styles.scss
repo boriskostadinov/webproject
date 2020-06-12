@@ -232,3 +232,37 @@
 
 
 // Bourbon page
+
+.bourbon img {
+	width: 320px;
+	height: 900px;
+	border-spacing: initial;
+}
+
+.content4 {
+	margin-top: 20px;
+	display: grid;  
+    grid-gap: 150px;  
+    grid-template-columns: repeat(auto-fit, 300px);
+	grid-template-rows: repeat(2, 600);
+	justify-content: center;
+}
+
+.content4-group {
+	margin-top: 20px;
+	display: grid;  
+    grid-gap: 50px;  
+    grid-template-columns: repeat(auto-fit, 300px);
+	grid-template-rows: repeat(2, 600);
+	justify-content: center;
+}
+
+.bourbon-description {
+	margin-bottom: 150px;
+}
+
+.bourbon-description p{
+	justify-content: center;
+	max-width: 100%;
+	font-size: 20px;
+}
