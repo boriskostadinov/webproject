@@ -266,3 +266,32 @@
 	max-width: 100%;
 	font-size: 20px;
 }
+
+
+// FAQs page
+
+.faqs {
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	margin-top: 50px;
+	margin-left: 20px;
+
+}
+
+.faqs img {
+	width: 80px;
+	height: 50px;
+	margin-right: 20px;	
+}
+
+.faqs-description {
+	font-size: 20px;
+}
+
+.headder h1{
+	margin-left: 40px;
+	margin-top: 50px;
+	text-decoration: solid underline;
+	text-shadow: 2px 2px 10px #0c794b;
+}
