@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif; }
+
+#main-nav a {
+  color: #f6f7f8;
+  background: #254441;
+  height: 64px;
+  font-family: lato;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.4s; }
+
+#main-nav a:hover {
+  background: #305753; }
+
+/* #main-nav {
+} */
+#main-nav ul {
+  list-style: none;
+  display: flex; }
+
+#main-nav li {
+  width: 100%;
+  text-align: center;
+  position: relative; }
+
+#main-nav li:hover .submenu > li {
+  display: block;
+  flex-direction: column;
+  top: 0px; }
+
+.submenu li {
+  display: none;
+  position: absolute;
+  top: 0px; }
+
+.submenu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 100%;
+  z-index: 3; }
+
+.submenu li {
+  position: relative; }
+
+.submenu li:hover .submenu-2 li {
+  display: block; }
+
+.submenu-2 li {
+  display: none; }
+
+.submenu-2 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0px;
+  left: 100%;
+  width: 120px;
+  z-index: 3; }
+
+.arrow {
+  margin-left: 8px;
+  color: #eee;
+  font-size: 12px; }
+
+#content-picture {
+  background-position: center;
+  margin-left: 10%;
+  margin-top: 5%;
+  width: 80%;
+  z-index: 0; }
+
+.content-text h2 {
+  font-size: 62px;
+  text-shadow: 2px 2px 5px black;
+  z-index: 1; }
+
+.content-text {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 320px;
+  transform: translate(-50%, -50%);
+  color: floralwhite; }
+
+.content2-text h1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 24px;
+  text-shadow: 4px 4px 10px lightyellow;
+  max-width: 100%; }
+
+.content2 {
+  margin-top: 40px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, 320px);
+  grid-template-rows: repeat(2, 320px);
+  justify-content: center; }
+
+.flip-card-front img {
+  max-width: 100%; }
+
+.flip-card {
+  background-color: transparent;
+  width: 320px;
+  height: 320px;
+  perspective: 1000px;
+  max-width: 100%; }
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); }
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg); }
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black; }
+
+.flip-card-back {
+  background-color: #14942f;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  transform: rotateY(180deg); }
+
+.wine img {
+  max-width: 100%;
+  width: 433px;
+  height: 750px; }
+
+.content3 {
+  margin-top: 20px;
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, 433px);
+  grid-template-rows: repeat(2, 750);
+  justify-content: center; }
+
+.wine-description {
+  margin: 30px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.wine-description p {
+  display: grid;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 10px; }
